@@ -27,7 +27,7 @@
 %\title{Project Report}
 %
 %%% Preamble
-\documentclass[paper=a4, fontsize=12pt]{scrartcl}
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
 \usepackage[T1]{fontenc}
 \usepackage{fourier}
 
@@ -41,7 +41,8 @@
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 \usepackage{graphicx}
-\graphicspath{ {images/} }
+\graphicspath{ images/}
+\setlength\parindent{0pt}
 
 %%% Custom sectioning
 \usepackage{sectsty}
@@ -100,7 +101,7 @@
 \maketitle
 \pagebreak
 \section{Problem}
-	Modern off-highway/agricultural systems use outdoor rated LCD displays to implement user interfaces. These current solutions are either too expensive, or put users at risk being an unsafe distance from the machines. Vermeer wishes to replace these expensive display systems with a more inexpensive solution as well as provide a more flexible development environment. A J1939 CAN system is used on most Vermeer systems, but would like to be expandable to other protocols. Vermeer has expressed their wish of emphasizing research and development with solutions utilizing android systems due to their prior experience with this technology. \\
+Modern off-highway/agricultural systems use outdoor rated LCD displays to implement user interfaces. These current solutions are either too expensive, or put users at risk being an unsafe distance from the machines. Vermeer wishes to replace these expensive display systems with a more inexpensive solution as well as provide a more flexible development environment. A J1939 CAN system is used on most Vermeer systems, but would like to be expandable to other protocols. Vermeer has expressed their wish of emphasizing research and development with solutions utilizing android systems due to their prior experience with this technology. \\
 	
 \noindent In more layman's terms: Vermeer currently uses a CAN bus to communicate data from a machine, such as a baler, to a VT (Virtual Terminal) in the cab of the tractor that is towing it. These VTs are wired, and proprietary. This makes them expensive and exposes the CAN bus to the harsh Agricultural environment. Replacing the Virtual Terminal with an android device has the potential to greatly reduce cost. While making the connection to the android device wireless can help prevent erosion and weakening of the system. \\
 
@@ -125,6 +126,7 @@ The main communication pertaining to our project is between a VT (virtual termin
 	\item Extensible to other CAN protocols
 \end{itemize} 
 \end{multicols*}
+\pagebreak
 
 
 \section{Solution}
@@ -132,73 +134,21 @@ The solution for this problem is to use a PIC32MX795 microcontroller to receive 
 
 \subsection{System Analysis}
 
-\textbf{Controller}
-The controller is what obtains the information from outside diagnostic tools on the machine. The controller then analyzes this information to determine what updates are needed for the VT. Another function of the controller is to send commands to these peripherals. The controller is where most of the functional work for the overall system is done. \\
+\textbf{Controller} \\
+The controller is what obtains the information from outside diagnostic tools on the machine. The controller then analyzes this information to determine what updates are needed for the VT. Another function of the controller is to send commands to these peripherals. \\
 
-\textbf{RF Bridge}
+\textbf{RF Bridge} \\
 The RF Bridge is what receives information from the Controller through the CAN Bus. This will then distribute the information over a wifi signal. Since a cloud connection is less feasible due to operating conditions,  an AdHoc similar network approach will take place. \\
 
 Our solution for the RF Bridge was to use a WRT Node, running a version of embedded linux to act as a server for the android device. The WRT Node can not directly receive a CAN signal so a PIC32 microprocessor translates the CAN data to UART for the WRT Node to receive. \\
 
-\textbf{Android Device}
+\textbf{Android Device} \\
 The Android device then takes the input from the RF Bridge. The Android tablet will then output the User Interface in order to visualize what the controller is receiving from the diagnostic tools such as hay, corn, or bean harvesters and such. \\
 
- Details of the modules are expanded upon in the following sections. Shown in Figure 1, is a high level block diagram of our solution.  \\
+ Details of the modules are expanded upon in the following sections. Shown in Figure 2.1, is a high level block diagram of our solution.  \\
+ \begin{figure}[ht]
+	 \center\includegraphics[scale=0.36]{rev4.png}
+ \caption{High-Level Block Diagram of Solution}
+ \end{figure}
 
-
-
-\pagebreak
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-\begin{align} 
-	\begin{split}
-	(x+y)^3 	&= (x+y)^2(x+y)\\
-					&=(x^2+2xy+y^2)(x+y)\\
-					&=(x^3+2x^2y+xy^2) + (x^2y+2xy^2+y^3)\\
-					&=x^3+3x^2y+3xy^2+y^3
-	\end{split}					
-\end{align}
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies 
-
-\subsection{Heading on level 2 (subsection)}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-\begin{align}
-	A = 
-	\begin{bmatrix}
-	A_{11} & A_{21} \\
-  	A_{21} & A_{22}
-	\end{bmatrix}
-\end{align}
-Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-
-\subsubsection{Heading on level 3 (subsubsection)}
-Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-
-\paragraph{Heading on level 4 (paragraph)}
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
-
-
-\section{Lists}
-
-\subsection{Example for list (3*itemize)}
-\begin{itemize}
-	\item First item in a list 
-		\begin{itemize}
-		\item First item in a list 
-			\begin{itemize}
-			\item First item in a list 
-			\item Second item in a list 
-			\end{itemize}
-		\item Second item in a list 
-		\end{itemize}
-	\item Second item in a list 
-\end{itemize}
-
-\subsection{Example for list (enumerate)}
-\begin{enumerate}
-	\item First item in a list 
-	\item Second item in a list 
-	\item Third item in a list
-\end{enumerate}
-%%% End document
 \end{document}
