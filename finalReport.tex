@@ -43,6 +43,7 @@
 \usepackage{graphicx}
 \graphicspath{{images/}}
 \setlength\parindent{0pt}
+\usepackage{array}
 
 %%% Custom sectioning
 \usepackage{sectsty}
@@ -183,6 +184,18 @@ The Xbee WiFi modules were not used in the final design. They were originally se
  \end{figure}
 
  \subsection{Unit Cost}
+ \vspace{10pt}
+ \begin{center}
+ \begin{tabular}{l c c c}
+	 \textbf{Unit} & \textbf{Qty.} & \textbf{Unit Price (\$)} & \textbf{Total Price (\$)} \\ [1ex]
+	 PIC32MX795F512L & 1 & 9.87 & 9.87 \\ [1ex]
+	 WRT Node & 1 & 25.00 & 25.00 \\ [1ex]
+	 MCP2551 & 1 & 1.22 & 1.22 \\ [1ex]
+	 Nexus 7 & 1 & 180 & 180 \\ [1ex]
+	 Misc. (Capacitors, etc.) & & <10 & <10 \\ [1ex] \cline{4-4}
+	 \textbf{Total}&&& \textbf{~226.09} \\ [1ex]
+\end{tabular}
+\end{center}
  
 
  \section{Operation Manual}
@@ -191,8 +204,7 @@ The Xbee WiFi modules were not used in the final design. They were originally se
  \subsection{WRTNode}
  The WRTNode must have a power source. It came included with a split usb cable for mounting usb drives, and a second male connector to charge from a laptop. It also has the capabilities for being powered through a 3.3 Volt pin. Once turned on, in order to access the WRTNode's shell, you have to connect to its broadcasted SSID signal. Once connected, you can open a terminal and ssh into the node. If moving around often the WRTNode will need to reconfigure its up-router in order to get internet access.\\
 
- Once inside the shell of the node, you can do all sorts of things. For the scope of this project, you will run the ./mountUsb.sh script, which mounts the usb storing out server code. From there you will cd to the usb mounted at /mnt/shares. Inside the Usb's main folder should be another script called ./update.sh. This removes and old code and pulls down any new code from github. The reason for the usb was limited storage space on the WRTNode, and our Python server contained 4 libraries, one of which was hefty in size because of the asynchronous networking code. Another tool we use is virtual environments. This allows us to install any libraries to a separate folder so our main python install doesn't get crowded, and it is specific to this project only. If you are unable to see a "(vermeer)" before the beginning of every line in the console, then you are not correctly inside the virtual environment. In order to do so, type source vermeer/bin/activate. You should now be ready to operate the server.\\
- 
+ Once inside the shell of the node, you can do all sorts of things. For the scope of this project, you will run the ./mountUsb.sh script, which mounts the usb storing out server code. From there you will cd to the usb mounted at /mnt/shares. Inside the Usb's main folder should be another script called ./update.sh. This removes and old code and pulls down any new code from github. The reason for the usb was limited storage space on the WRTNode, and our Python server contained 4 libraries, one of which was hefty in size because of the asynchronous networking code. Another tool we use is virtual environments. This allows us to install any libraries to a separate folder so our main python install doesn't get crowded, and it is specific to this project only. If you are unable to see a "(vermeer)" before the beginning of every line in the console, then you are not correctly inside the virtual environment. In order to do so, type source vermeer/bin/activate. You should now be ready to operate the server.\\ 
  In order to run the code, make sure you are in the folder called vermeer-backend-master. Once inside execute python vermeer/backend/server\_asyncio.py. You can also execute this with a -debug flag for better testing purposes. The server will now wait until it gets a "Start" command from the CAN and PIC controller. Once started the server will always be listening on 192.168.1.1. However, you are only allowed to talk to it if you are connected to its broadcasted SSID as well, which you are allowed to make password protected. As soon as a client connects to it, it then goes through steps to determine whether to initialize the Virtual Terminal, or to update an existing one. It then parses an .iop file for specific components and constructs a json blob to send back the client to display the terminal. \\
  
  Any updates sent from the CAN through the PIC to the server, will also be sent out to all and any connected clients. The clients must react and update their displays and respond with either a success message or an error message. \\
