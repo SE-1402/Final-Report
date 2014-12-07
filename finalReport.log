@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.5)  7 DEC 2014 14:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.5)  7 DEC 2014 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -704,23 +704,31 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 106--107
+Package tocbasic Info: character protrusion at toc deactivated on input line 10
+5.
 
- []
+No file finalReport.toc.
+\tf@toc=\write3
+\openout3 = `finalReport.toc'.
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 111--112
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 115.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 117
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 117.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 119
 .
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
@@ -729,39 +737,34 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 139--141
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 141--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--144
+Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--149
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
-<images/rev4.png, id=11, 775.89874pt x 427.5975pt>
+<images/rev4.png, id=14, 775.89874pt x 427.5975pt>
 File: images/rev4.png Graphic file (type png)
  <use images/rev4.png>
-Package pdftex.def Info: images/rev4.png used on input line 152.
+Package pdftex.def Info: images/rev4.png used on input line 154.
 (pdftex.def)             Requested size: 279.32333pt x 153.93498pt.
 
-[3 <./images/rev4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+[4 <./images/rev4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 159--161
 
  []
 
@@ -771,12 +774,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--163
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
@@ -785,55 +788,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 178--180
 
  []
 
-[5] <images/PCB.jpg, id=23, 883.3pt x 557.08125pt>
+[6] <images/PCB.jpg, id=26, 883.3pt x 557.08125pt>
 File: images/PCB.jpg Graphic file (type jpg)
  <use images/PCB.jpg>
-Package pdftex.def Info: images/PCB.jpg used on input line 182.
+Package pdftex.def Info: images/PCB.jpg used on input line 184.
 (pdftex.def)             Requested size: 264.99205pt x 167.12566pt.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 189.
+(Font)              scaled to size 10.07397pt on input line 191.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 189.
+(Font)              scaled to size 7.63599pt on input line 191.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 189.
+(Font)              scaled to size 5.51999pt on input line 191.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 189.
+(Font)              scaled to size 10.07397pt on input line 191.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 189.
+(Font)              scaled to size 7.63599pt on input line 191.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 189.
+(Font)              scaled to size 5.51999pt on input line 191.
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--206
-
- []
-
-[6 <./images/PCB.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 207--208
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+[7 <./images/PCB.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 209--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
+Underfull \hbox (badness 10000) in paragraph at lines 211--213
 
  []
 
@@ -843,16 +846,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--218
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
@@ -863,73 +866,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--227
+Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 231--232
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 234--235
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
 
  []
 
-<images/rev1.jpg, id=34, 521.95pt x 514.92375pt>
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 236--237
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 239--240
+
+ []
+
+<images/rev1.jpg, id=37, 521.95pt x 514.92375pt>
 File: images/rev1.jpg Graphic file (type jpg)
  <use images/rev1.jpg>
-Package pdftex.def Info: images/rev1.jpg used on input line 242.
+Package pdftex.def Info: images/rev1.jpg used on input line 244.
 (pdftex.def)             Requested size: 260.97435pt x 257.46124pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--246
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-[9 <./images/rev1.jpg>] <images/rev2.jpg, id=38, 551.05875pt x 527.9725pt>
+[10 <./images/rev1.jpg>] <images/rev2.jpg, id=41, 551.05875pt x 527.9725pt>
 File: images/rev2.jpg Graphic file (type jpg)
 
 <use images/rev2.jpg>
-Package pdftex.def Info: images/rev2.jpg used on input line 249.
+Package pdftex.def Info: images/rev2.jpg used on input line 251.
 (pdftex.def)             Requested size: 275.52869pt x 263.9856pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--253
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-[10 <./images/rev2.jpg>] <images/rev3.jpg, id=42, 551.05875pt x 527.9725pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--257
+
+ []
+
+[11 <./images/rev2.jpg>] <images/rev3.jpg, id=45, 551.05875pt x 527.9725pt>
 File: images/rev3.jpg Graphic file (type jpg)
 
 <use images/rev3.jpg>
-Package pdftex.def Info: images/rev3.jpg used on input line 258.
+Package pdftex.def Info: images/rev3.jpg used on input line 260.
 (pdftex.def)             Requested size: 275.52869pt x 263.9856pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--262
+Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
 File: images/rev4.png Graphic file (type png)
 <use images/rev4.png>
-Package pdftex.def Info: images/rev4.png used on input line 265.
+Package pdftex.def Info: images/rev4.png used on input line 267.
 (pdftex.def)             Requested size: 387.94843pt x 213.79822pt.
- [11 <./images/rev3.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 268--269
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 271--273
+ [12 <./images/rev3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
@@ -938,13 +941,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--276
 
  []
 
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 277--280
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--279
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 281--283
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 280--283
 
  []
 
@@ -954,22 +957,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 284--286
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--289
+Underfull \hbox (badness 10000) in paragraph at lines 288--290
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 290--292
+Underfull \hbox (badness 10000) in paragraph at lines 291--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--295
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 294--296
 
  []
 
@@ -978,13 +976,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 301--302
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--304
+Underfull \hbox (badness 10000) in paragraph at lines 302--303
 
  []
 
@@ -993,23 +991,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 305--306
 
  []
 
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--315
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
 
  []
 
@@ -1018,22 +1016,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 316--317
 
  []
 
-[15] (./finalReport.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
+
+ []
+
+[16] (./finalReport.aux) ) 
 Here is how much of TeX's memory you used:
- 7203 strings out of 493304
- 109432 string characters out of 6139871
+ 7217 strings out of 493304
+ 109751 string characters out of 6139871
  239173 words of memory out of 5000000
- 10269 multiletter control sequences out of 15000+600000
+ 10282 multiletter control sequences out of 15000+600000
  105751 words of font info for 244 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 47i,12n,47p,1040b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,47p,1067b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
 r.enc}</usr/share/texlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb>
-Output written on finalReport.pdf (15 pages, 285669 bytes).
+Output written on finalReport.pdf (16 pages, 285159 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  37914 words of extra memory for PDF output out of 42996 (max. 10000000)
 
