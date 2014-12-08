@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.5)  7 DEC 2014 15:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.5)  7 DEC 2014 20:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -495,6 +495,14 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip57
 \backup@length=\skip58
 )
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count113
+\float@exts=\toks28
+\float@box=\box55
+\@float@everytoks=\toks29
+\@floatcapt=\box56
+)
 (/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
@@ -505,7 +513,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              I'd suggest to use 
 (scrartcl)              package `scrpage2' or `scrlayer-scrpage'.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 55.
+(scrartcl)              package `fancyhdr' on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip59
@@ -521,55 +529,55 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (./finalReport.aux)
 \openout1 = `finalReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 102.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 102
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 104.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 104
 .
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 102
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 104
 .
  (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 102
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 104
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 102.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 104.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 102.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 102.
+LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 104.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-LaTeX Info: Redefining \microtypecontext on input line 102.
+LaTeX Info: Redefining \microtypecontext on input line 104.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -586,17 +594,17 @@ Package microtype Info: Loading generic settings for font family
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
+\scratchcounter=\count114
 \scratchdimen=\dimen126
-\scratchbox=\box55
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count116
+\scratchbox=\box57
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks30
+\MPscratchCnt=\count117
 \MPscratchDim=\dimen127
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks29
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks31
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -645,7 +653,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 104.
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 106.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmss.fd
@@ -655,7 +663,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OT1+bch on input line 104.
+LaTeX Font Info:    Try loading font information for OT1+bch on input line 106.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1bch.fd
@@ -666,24 +674,24 @@ File: mt-bch.cfg 2007/03/03 v1.5 microtype config. file: Bitstream Charter (RS)
 
 )
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 10
-4.
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 104.
+(Font)              scaled to size 13.24796pt on input line 106.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 104.
+(Font)              scaled to size 9.19998pt on input line 106.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 104.
+(Font)              scaled to size 7.35999pt on input line 106.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 104.
+(Font)              scaled to size 13.24796pt on input line 106.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 104.
+(Font)              scaled to size 9.19998pt on input line 106.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 104.
-LaTeX Font Info:    Try loading font information for U+msa on input line 104.
+(Font)              scaled to size 7.35999pt on input line 106.
+LaTeX Font Info:    Try loading font information for U+msa on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -691,7 +699,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 104.
+LaTeX Font Info:    Try loading font information for U+msb on input line 106.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -705,7 +713,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 10
-5.
+7.
  (./finalReport.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
 (Font)              scaled to size 10.07397pt on input line 3.
@@ -724,23 +732,23 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 \openout3 = `finalReport.toc'.
 
  [2]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 112--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 117.
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 119
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 119.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 121
 .
 (/usr/share/texlive/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
@@ -750,118 +758,118 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 141--143
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--148
+Underfull \hbox (badness 10000) in paragraph at lines 146--148
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 149--151
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 151--153
 
  []
 
 <images/rev4.png, id=15, 775.89874pt x 427.5975pt>
 File: images/rev4.png Graphic file (type png)
  <use images/rev4.png>
-Package pdftex.def Info: images/rev4.png used on input line 154.
-(pdftex.def)             Requested size: 279.32333pt x 153.93498pt.
+Package pdftex.def Info: images/rev4.png used on input line 156.
+(pdftex.def)             Requested size: 232.77141pt x 128.28023pt.
 
 [4 <./images/rev4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 159--161
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+Underfull \hbox (badness 10000) in paragraph at lines 169--171
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--172
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 173--175
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--177
+Underfull \hbox (badness 10000) in paragraph at lines 179--180
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 178--180
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
 
 [6] <images/PCB.jpg, id=27, 883.3pt x 557.08125pt>
 File: images/PCB.jpg Graphic file (type jpg)
  <use images/PCB.jpg>
-Package pdftex.def Info: images/PCB.jpg used on input line 184.
-(pdftex.def)             Requested size: 264.99205pt x 167.12566pt.
+Package pdftex.def Info: images/PCB.jpg used on input line 189.
+(pdftex.def)             Requested size: 441.64893pt x 278.53995pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
-
+Overfull \hbox (23.39337pt too wide) in paragraph at lines 189--190
+ [] 
  []
 
 [7 <./images/PCB.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 209--210
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--220
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
@@ -871,132 +879,127 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--229
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 236--237
+Underfull \hbox (badness 10000) in paragraph at lines 229--230
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 231--232
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 234--235
+
+ []
+
+[9] [10]
 Underfull \hbox (badness 10000) in paragraph at lines 239--240
 
  []
 
-<images/rev1.jpg, id=38, 521.95pt x 514.92375pt>
-File: images/rev1.jpg Graphic file (type jpg)
- <use images/rev1.jpg>
-Package pdftex.def Info: images/rev1.jpg used on input line 244.
-(pdftex.def)             Requested size: 260.97435pt x 257.46124pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-[10 <./images/rev1.jpg>] <images/rev2.jpg, id=42, 551.05875pt x 527.9725pt>
-File: images/rev2.jpg Graphic file (type jpg)
 
-<use images/rev2.jpg>
-Package pdftex.def Info: images/rev2.jpg used on input line 251.
-(pdftex.def)             Requested size: 275.52869pt x 263.9856pt.
+Underfull \hbox (badness 10000) in paragraph at lines 245--246
+
+ []
+
+[11] <images/rev1.jpg, id=44, 521.95pt x 514.92375pt>
+File: images/rev1.jpg Graphic file (type jpg)
+ <use images/rev1.jpg>
+Package pdftex.def Info: images/rev1.jpg used on input line 251.
+(pdftex.def)             Requested size: 208.77629pt x 205.96585pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
+<images/rev2.jpg, id=45, 551.05875pt x 527.9725pt>
+File: images/rev2.jpg Graphic file (type jpg)
+ <use images/rev2.jpg>
+Package pdftex.def Info: images/rev2.jpg used on input line 258.
+(pdftex.def)             Requested size: 220.41959pt x 211.18526pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
+[12 <./images/rev1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
 
  []
 
-[11 <./images/rev2.jpg>] <images/rev3.jpg, id=46, 551.05875pt x 527.9725pt>
-File: images/rev3.jpg Graphic file (type jpg)
-
-<use images/rev3.jpg>
-Package pdftex.def Info: images/rev3.jpg used on input line 260.
-(pdftex.def)             Requested size: 275.52869pt x 263.9856pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 263--264
 
  []
 
-File: images/rev4.png Graphic file (type png)
-<use images/rev4.png>
-Package pdftex.def Info: images/rev4.png used on input line 267.
-(pdftex.def)             Requested size: 387.94843pt x 213.79822pt.
- [12 <./images/rev3.jpg>]
+<images/rev3.jpg, id=49, 551.05875pt x 527.9725pt>
+File: images/rev3.jpg Graphic file (type jpg)
+ <use images/rev3.jpg>
+Package pdftex.def Info: images/rev3.jpg used on input line 267.
+(pdftex.def)             Requested size: 220.41959pt x 211.18526pt.
+
+[13 <./images/rev2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 270--271
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--279
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 280--283
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--286
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 288--290
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 291--293
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 294--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 298--299
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 300--301
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 305--306
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 307--308
+File: images/rev4.png Graphic file (type png)
+<use images/rev4.png>
+Package pdftex.def Info: images/rev4.png used on input line 274.
+(pdftex.def)             Requested size: 310.354pt x 171.03596pt.
+ [14 <./images/rev3.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 277--278
 
  []
 
 [15]
+Underfull \hbox (badness 10000) in paragraph at lines 282--284
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 285--287
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 288--291
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--301
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 302--304
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 309--310
 
  []
@@ -1006,44 +1009,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 311--312
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 313--314
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--317
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 315--316
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--319
+Underfull \hbox (badness 10000) in paragraph at lines 317--318
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+Underfull \hbox (badness 10000) in paragraph at lines 319--320
 
  []
 
-[16] (./finalReport.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--322
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 329--330
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
+
+ []
+
+[20] (./finalReport.aux) ) 
 Here is how much of TeX's memory you used:
- 7219 strings out of 493304
- 109783 string characters out of 6139871
- 239173 words of memory out of 5000000
- 10282 multiletter control sequences out of 15000+600000
+ 7276 strings out of 493304
+ 110568 string characters out of 6139871
+ 239545 words of memory out of 5000000
+ 10335 multiletter control sequences out of 15000+600000
  105751 words of font info for 244 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 47i,12n,47p,1067b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 47i,12n,47p,1035b,368s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8
 r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/te
 xlive/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfsx1095.pfb>
-Output written on finalReport.pdf (16 pages, 307487 bytes).
+Output written on finalReport.pdf (20 pages, 308867 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
- 49 compressed objects within 1 object stream
+ 90 PDF objects out of 1000 (max. 8388607)
+ 58 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  37914 words of extra memory for PDF output out of 42996 (max. 10000000)
 
