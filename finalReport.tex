@@ -145,13 +145,13 @@ Our solution for the RF Bridge was to use a WRTnode, running a version of embedd
 \textbf{Android Device} \\
 Input from the RF bridge is then received by the Android device. Data from the RF bridge is received as JSON and parsed by the device into VT elements. The Android device then outputs the parsed data to the User Interface showing the current machine state. \\
 
+ \pagebreak
  Details of the modules are expanded upon in the following sections. Shown in Figure 2.1, shows a high level block diagram of our solution.  \\
  \begin{figure}[h]
-	 \center\includegraphics[scale=0.3]{rev4.png}
+	 \center\includegraphics[scale=0.6]{rev4.png}
  \caption{High-Level Block Diagram of Solution}
  \end{figure}
 
-\pagebreak
 \subsection{Hardware Description}
 \textbf{PIC32 Microcontroller}  \\
 The most important requirement of the microcontroller we selected was that it needed to be able to receive and interpret CAN signals efficiently. The PIC32 microcontroller has multiple families, of which, all PIC32MX5xx, PIC32MX6xxx, and PIC327xxx microcontrollers have CAN modules. We selected the PIC32MX795 due to it's increased memory and computing capacity. We wanted to select a microcontroller that was overpowered rather than underpowered due to the time it takes to deliver the microcontrollers. The PIC32MX795 offers 512KB of program memory, 128KB of ram, UART and SPI modules, as well as the CAN modules stated before. This fulfills all specs required of the microcontroller. \\
@@ -177,11 +177,14 @@ The Client software is a pure translation of the Virtual Terminal that most of t
 \textbf{XBee WiFi Modules (XB2B-WFST-001)} \\
 The Xbee WiFi modules were not used in the final design. They were originally selected to make an ad-hoc connection between the microcontroller and the Android device. We selected this particular model because of the ability to add any size antenna. This would have helped in testing to see what the minimum size antenna for a certain distance would require. Even though the XBees weren't used in the final design. They proved to be a viable secondary option for Vermeer. They also aided in debugging connections on the final design, since we had proven earlier that the connections worked with them. Knowing these worked allowed us to run the WRTnode in sync with the XBees, verifying the incoming data was correct on the CAN bus, thus, eliminating a debugging step when a problem arises. \\
 
+\pagebreak
 \subsection{PCB Design}
  \begin{figure}[ht]
 	 \center\includegraphics[scale=0.4]{PCB.jpg}
  \caption{Printable Circuit Board Design for Rev. 4}
  \end{figure}
+
+ \vspace{30pt}
 
  \subsection{Unit Cost}
  \vspace{10pt}
@@ -303,9 +306,11 @@ Github is a popular version control system. We used this for code on all of the 
 \section{Setbacks/Challenges} 
 The biggest setback we had during the project was communication. There were multiple times when lack of quality communication (sometimes out of our control) cost us weeks of development time. At the beginning of the project it took us longer than anticipated to fully understand the scope of our project. A day trip to Vermeer's corporate headquarters meeting with our Vermeer contact and others helped alleviate this initial confusion. After the trip to Vermeer, designing solutions emerged at a more rapid pace. Another instance where lack of quality communication stalled progress was on the software side. We knew that we would receive and IOP file and needed to parse it. Learning how to parse this IOP file proved to be much more difficult than anticipated, and many meetings with the incorrect people, pointing us to the "correct" people impeded software development greatly. \\
 
-Another setback that we had early on in development was programming the microcontroller. When attempting to program the microcontroller manually, the voltage was not regulated and burned the chip. To avoid this from happening again, when we ordered another chip, we also ordered a development board to assist in the programming process. \\
+Another setback that we had early on in development was programming the microcontroller. When attempting to program the microcontroller manually, the voltage was not regulated properly and burned the chip. To avoid this from happening again, when we ordered another chip, we also ordered a development board to assist in the programming process. This development board included a USB programmer to allieviate the voltage regulation problem. The development board also assited in debugging allowing messages to be displayed on an LCD display. \\
 
-The third major setback that we had in development was getting the clocking to work so all the peripherals worked at the same time on the microcontroller. After strenuous debugging it was found that the phased-lock loop circuit was the culprit. After correcting this, development came along with few other setbacks. \\
+The third major setback that we had in development was getting the clocking to work so all the peripherals worked at the same time on the microcontroller. We had multiple sections working independently, however, during integration everything ceased to continue working. After strenuous debugging it was found that clocking, specifically, a phased-lock loop circuit was the culprit. After correcting this, development came along with few other setbacks. \\
+
+A fourth challenge we faced was also related to communication. One of our group members needed to work remotely for approximately four months. This challenge was conquered with frequent video conferences. These video conferences consisted of progress updates, design decision discussions, as well as any other administrative needs. We also assigned tasks to that member that were not tightly coupled with the tasks that were currently being worked on on-site by the other group members. This allowed the remote group member to have greater autonomy thus reducing the need for immediate or frequent communication.
 
 \pagebreak
 \section{Reflection}
@@ -321,7 +326,7 @@ Our efficiency at reading data sheets has improved greatly over the course of th
 
 \pagebreak
 \section{Future Iterations}
-A simple update to improve the system would be to upgrade the communications from UART to SPI. SPI requires an extra pin, but allows for faster data transmission. \\
+A simple update to improve the system would be to upgrade the communications from UART to SPI. SPI requires an extra pin, but allows for faster data transmission. On the PIC microcontroller this allows for a theoretical \%600 increase in data speed. \\
 
 For the WRTnode, Server robustness could be improved. Currently waiting for data from the UART is a blocking process. The system would be more efficient and robust if a non-blocking thread listened for UART communication. \\
 
