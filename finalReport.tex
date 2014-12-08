@@ -332,4 +332,5 @@ For the WRTnode, Server robustness could be improved. Currently waiting for data
 
 On the Android UI, more VT elements need to be recognizable to complete a fully functional application. The current parsing of VT elements can be used as a template.\\
 
+Also, because of the dynamic structure we have created, there might be memory and time consumption issues. One way to resolve this, would be for the creator of the VT design (in this case Vermeer) to create an Android Layout file instead. They would then pass that file through the WRTNode, or potentially store it on the device, and just issue an id from the Node, which allows the android to call it up and inflate the layout. This allows for faster runtime loads, and for the android device to potentially store a numerous amount of layouts. The only drawback from this situation is the decoupling from the current VT ecosystem. The designers would have to design for two different systems, unless all of their consumers are using Android.
 \end{document}
