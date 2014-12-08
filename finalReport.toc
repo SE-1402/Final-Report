@@ -29,3 +29,5 @@
 \contentsline {section}{\numberline {7}Setbacks/Challenges}{19}
 \contentsline {section}{\numberline {8}Reflection}{20}
 \contentsline {section}{\numberline {9}Future Iterations}{21}
+\contentsline {subsection}{\numberline {9.1}Hardware}{21}
+\contentsline {subsection}{\numberline {9.2}Software}{21}

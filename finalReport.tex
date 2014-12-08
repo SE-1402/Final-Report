@@ -326,8 +326,12 @@ Our efficiency at reading data sheets has improved greatly over the course of th
 
 \pagebreak
 \section{Future Iterations}
+\subsection{Hardware}
 A simple update to improve the system would be to upgrade the communications from UART to SPI. SPI requires an extra pin, but allows for faster data transmission. On the PIC microcontroller this allows for a theoretical \%600 increase in data speed. \\
 
+Continued work needs to be done for manufacturing as well. The PCB should be printed and tested. A container for the unit should be designed as well to house the micro-controller and the WRTnode, without interfering with the wireless communication of the WRTnode. \\
+
+\subsection{Software}
 For the WRTnode, Server robustness could be improved. Currently waiting for data from the UART is a blocking process. The system would be more efficient and robust if a non-blocking thread listened for UART communication. \\
 
 On the Android UI, more VT elements need to be recognizable to complete a fully functional application. The current parsing of VT elements can be used as a template.\\
