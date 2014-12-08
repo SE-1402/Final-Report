@@ -121,13 +121,16 @@ Vermeer currently uses a CAN bus to communicate data from a machine, such as a b
 	less than \$300 unit cost & \\ [1ex]
 \end{tabular}
 
-
 \subsection{Functional Decomposition}
 The main communication pertaining to our project is between a VT (virtual terminal) and a controller on the unit (in our target case a 605 baler). The controller communicates to the VT through a CAN bus starting with a series of hand shakes, setting up the initial UI. Then during normal operation, the controller reads data from point to point connections with sensors. The controller analyzes the data and sends UI update information through the CAN bus. This connection between the controller and the VT will now be wireless utilizing android instead of a proprietary VT system. \\
 
 \pagebreak
 \section{Solution}
-The solution for this problem is to use a PIC32MX795 microcontroller to receive CAN data from the controller on the operating machine. The PIC32 communicates with a WRT Node module that runs a web socket for wireless communication with the android device replacing the Virtual Terminal.\\
+\subsection{Solution Space}
+For the solution we needed a way to receive a CAN signal at a fairly rapid rate. We also needed at way to communicate with the Android device wirelessly. Third, we needed a way to translate the CAN signal to a format understandable by the Android Device. These could all be done with a single module, or seperate modules for each task. A balance needs to be taken into consideration when comparing module selection to minimize complexity while maximizing modularity.  \\
+
+\subsection{Chosen Solution}
+The solution chosen was to use a PIC32MX795 microcontroller to receive CAN data from the controller on the operating machine. The PIC32 communicates with a WRT Node module that runs a web socket for wireless communication with the android device replacing the Virtual Terminal.\\
 
 \subsection{System Analysis}
 
@@ -174,10 +177,9 @@ The Client software is a pure translation of the Virtual Terminal that most of t
 \textbf{XBee WiFi Modules (XB2B-WFST-001)} \\
 The Xbee WiFi modules were not used in the final design. They were originally selected to make an ad-hoc connection between the microcontroller and the android device. We selected this particular model because of the ability to add any size antenna. This would have helped in testing to see what the minimum size antenna for a certain distance would require. Even though the XBees weren't used in the final design. They proved to be a viable secondary option for Vermeer. They also aided in debugging connections on the final design, since we had proven earlier that the connections worked with them. Knowing these worked allowed us to run the WRT Node in sync with the XBees, verifying the incoming data was correct on the CAN bus, thus, eliminating a debugging step when a problem arises. \\
 
-\pagebreak
 \subsection{PCB Design}
  \begin{figure}[ht]
-	 \center\includegraphics[scale=0.5]{PCB.jpg}
+	 \center\includegraphics[scale=0.4]{PCB.jpg}
  \caption{Printable Circuit Board Design for Rev. 4}
  \end{figure}
 
@@ -208,9 +210,13 @@ The Xbee WiFi modules were not used in the final design. They were originally se
  Once inside the shell of the node, you can do all sorts of things. For the scope of this project, run the ./mountUsb.sh script. This mounts the usb storing our server code. From there cd to the usb mounted at /mnt/shares. Inside the Usb's main folder should be another script called ./update.sh. This removes and old code and pulls down any new code from github. The reason for the usb was limited storage space on the WRTNode, and our Python server contained 4 libraries, one of which was hefty in size because of the asynchronous networking code. Another tool we use is virtual environments. This allows us to install any libraries to a separate folder so our main python install doesn't get crowded, and it is specific to this project only. If you are unable to see a "(vermeer)" before the beginning of every line in the console, then you are not correctly inside the virtual environment. In order to do so, type source vermeer/bin/activate. You should now be ready to operate the server.\\ 
  In order to run the code, make sure you are in the folder called vermeer-backend-master. Once inside execute python vermeer/backend/server\_asyncio.py. You can also execute this with a -debug flag for a more verbose output usefull for testing purposes. The server will now wait until it gets a "Start" command from the CAN and PIC controller. Once started, the server will always be listening on 192.168.1.1. However, you are only allowed to talk to it if you are connected to its broadcasted SSID as well, which you are allowed to make password protected. As soon as a client connects to it, it then goes through steps to determine whether to initialize the Virtual Terminal, or to update an existing one. It then parses the .iop file for specific components and constructs a json blob to send back the client to display the terminal. \\
  
- Any updates sent from the CAN through the PIC to the server, will also be sent out to all connected clients. The clients must react and update their displays and respond with either a success message or an error message. \\
+ \begin{samepage}
+ Any updates sent from the CAN through the PIC to the server, will be sent out to all connected clients. The clients must update their displays and respond with a success or error message. \\
+ \end{samepage}
  
+ \begin{samepage}
  If any client disconnects at any time, whether on purpose or accident, the server will know recognize this and terminate the connection on its end as well, this automatic termination frees up space and memory. \\
+ \end{samepage}
 
  \subsection{Android Device} 
  To operate the Android tablet we must first have turned on with a charge. Once the device is on, we have a couple of choices on how we plan to install the application. We can default to putting the application on the Google Play Store, which allows anybody in the given locales to download it. We can also use Google Community groups to allow only a select few from seeing it in the play store, but this is a hassle for any user needing to download it with short notice. Another option is through third party distributes such as TestFlight, which allows people to sign up via email to receive a download of the app. And finally we can simply install the .apk ourselves through manual transfer, whether by email or a download link from a website. Since there is little security risk, putting the application directly on the Google Play Store would be recommended for ease of access to customers. \\
