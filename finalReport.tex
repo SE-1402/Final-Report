@@ -108,33 +108,24 @@
 \pagebreak
 \section{Problem}
 Modern off-highway/agricultural systems use outdoor rated LCD displays to implement user interfaces. These current solutions are either too expensive, or put users at risk being an unsafe distance from the machines. Vermeer wishes to replace these expensive display systems with a more inexpensive solution as well as provide a more flexible development environment. A J1939 CAN system is used on most Vermeer systems, but would like to be expandable to other protocols. Vermeer has expressed their wish of emphasizing research and development with solutions utilizing android systems due to their prior experience with this technology. \\
-	
+
 Vermeer currently uses a CAN bus to communicate data from a machine, such as a baler, to a VT (Virtual Terminal) in the cab of the tractor that is towing it. These VTs are wired, and proprietary. This makes them expensive and exposes the CAN bus to the harsh Agricultural environment. Replacing the Virtual Terminal with an android device has the potential to greatly reduce cost. While making the connection to the android device wireless can help assist in erosion prevention of the system. \\
+
+\subsection{System Requirements}
+\vspace{10pt}
+\begin{tabular}{c | c}
+	\textbf{Functional} & \textbf{Non-Functional} \\ [2ex]
+	Stream > 10\%  CAN bus load at 250Kbps throughput & User friendly for the android operator \\ [1ex]
+	Withstand outdoor environment & Extensible to other CAN protocols \\ [1ex]
+	Withstand high vibration environment & \\ [1ex]
+	less than \$300 unit cost & \\ [1ex]
+\end{tabular}
+
 
 \subsection{Functional Decomposition}
 The main communication pertaining to our project is between a VT (virtual terminal) and a controller on the unit (in our target case a 605 baler). The controller communicates to the VT through a CAN bus starting with a series of hand shakes, setting up the initial UI. Then during normal operation, the controller reads data from point to point connections with sensors. The controller analyzes the data and sends UI update information through the CAN bus. This connection between the controller and the VT will now be wireless utilizing android instead of a proprietary VT system. \\
 
-\subsection{System Requirements}
-\begin {multicols*}{2}
-\center{\textbf{Functional}}
-\begin{itemize}
-	\item Stream > 10\%  CAN bus load at 250Kbps throughput
-	\item Withstand outdoor environment
-	\item Withstand high vibration environment
-	\item less than \$300 unit cost
-\end{itemize} 
-
-\columnbreak
-
-\center{\textbf{Non-Functional}}
-\begin{itemize}
-	\item User friendly for the android operator
-	\item Extensible to other CAN protocols
-\end{itemize} 
-\end{multicols*}
 \pagebreak
-
-
 \section{Solution}
 The solution for this problem is to use a PIC32MX795 microcontroller to receive CAN data from the controller on the operating machine. The PIC32 communicates with a WRT Node module that runs a web socket for wireless communication with the android device replacing the Virtual Terminal.\\
 
