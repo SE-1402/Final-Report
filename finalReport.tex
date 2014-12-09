@@ -238,11 +238,17 @@ The Xbee WiFi modules were not used in the final design. They were originally se
 \subsection{CAN-UART Connection}
 The CAN bus was tested using Vector VN1630 hardware with varying CAN messages that were  controlled by CANalyzer software. The CAN-UART connection was first tested by sending the CAN messages to the UART connection that was connected to 	WiFi to a computer. The received messages then, was verified to be the same as the send messages. \\
 
+The connection was tested at multiple frequencies. This was done by conducting tests while incrementally increasing the baud rate of connections. The greatest reliable connection acheived was 57600 baud. With the design requirement of 10\% at 250kbaud, this is theoretically sufficient.
+
 \subsection{Endurance Testing}
 The CAN-UART connection was run in excess of 5 hours to test the endurace of the system. Endurance testing was done to mainly make sure the program didn't crash. If the program did crash, it would likely have been due to a memory leak. During the endurance testing, the inputs and outputs through the system were verified to be equivalent. \\
 
 \subsection{Interference Testing}
 Interference testing was conducted utilizing the Vector module. The vector module mimicked additional modules sending traffic on the CAN bus. The program was able to detect correct data and filter unwanted data. \\
+
+\subsection{Range Testing}
+The system was gradually seperated to see the distance capable of communication. The design requirements called for 10m range. When tested in an outdoor environment, the system was able to function at a distance in excess of 40 meters. This is more than efficient for our particular target of a project. Distances in excess of 60 meters started to show a decrease in reliability of the WRTnode.
+
 
 \pagebreak
 \section{Design Revisions}
